@@ -3,14 +3,14 @@ from telegram import Update
    import requests
 
    # Вставьте свой токен
-   TOKEN = 'YOUR_BOT_TOKEN'
+   TOKEN = '7844631996:AAFqQc2-cCX1OBwcUCbu0Z-xvjQ_yQIOkdQ'
 
    def start(update: Update, context: CallbackContext) -> None:
        update.message.reply_text('Привет! Я бот, который взаимодействует с вашим сайтом.')
 
    def get_data_from_site(update: Update, context: CallbackContext) -> None:
        # Пример запроса к вашему сайту
-       response = requests.get('https://yourwebsite.com/api/data')
+       response = requests.get('https://dgem.io/api/data')
        data = response.json()  # Предполагаем, что сайт возвращает JSON
 
        # Отправка данных пользователю
